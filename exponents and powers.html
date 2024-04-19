@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Decimals</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="div.css">
+     </head>
+     <body>
+          <MARQUEE direction="right" scrollamount="10"><b><u><h1>Decimals</h1></u></b></MARQUEE>
+          <hr>
+          <center>
+                 <div id="container">
+                      <label for="b">Enter the base: </label><br>
+                      <input type="text" id="b" value="0"><br>
+                      <label for="e">Enter the exponent/power: </label><br>
+                      <input type="text" id="b" value="0"><br>
+                      <label for="r">The result: </label><br>
+                      <input type="text" id="b" value="0" readonly><br>
+                      <input type="button" value="result" onclick="result()">
+                      <input type="button" value="reset" onclick="reset()">
+                      <button onclick="document.location='index.html'">Home</button>
+                      <button onclick="document.location='class 7.html'">Class 7</button>
+                 </div>
+          </center>
+          <script>
+                 function result()
+                 {
+                    var B = Number(document.getElementById("b").value);
+                    var E = Number(document.getElementById("e").value);
+                    var R = Number(document.getElementById("r").value);
+                    if (B == 0 && E ==  0)
+                    {
+                       const R = String("invalid input");
+                       document.getElementById("r").value= String(R);
+                    }
+                    else
+                    {
+                        R = Math.pow(B,E);
+                        document.getElementById("r").value= String(R);
+                    }
+                 }
+                 function reset()
+                 {
+                    document.getElementById("b").value= "0";
+                    document.getElementById("e").value= "0";
+                    document.getElementById("r").value= "0";
+                 }
+          </script>
+     </body>
+</html>

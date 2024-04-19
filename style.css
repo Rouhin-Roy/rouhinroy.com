@@ -1,0 +1,29 @@
+body
+{
+    height: 1500px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+}
+button 
+{
+    padding: 10px 20px;
+    background-color: #09e748;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px; 
+    box-shadow: 0 2px 4px rgb(21, 115, 82);
+}
+h2
+{
+    padding: 10px 20px;
+    background-color: #0deb6dad;
+    color: rgba(10, 0, 95, 0.886);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: px; 
+    box-shadow: 0 2px 4px rgb(21, 115, 82);
+    width: fit-content;
+}
